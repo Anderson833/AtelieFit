@@ -1,0 +1,227 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/10/2022, 23:25:20
+    Author     : ander
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box
+}
+
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+  .nav{
+  /*  border: 4px solid gray;*/
+      display: flex;
+     /* background-color: #FF00FF; */
+   
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+  }
+
+  .logo{
+    flex: 23%;
+     /* border: 5px solid gray; */
+     text-align: center;
+     margin-bottom: 10px;
+  }
+ .logo h1{
+    font-family: 'Lobster', cursive;
+    color:	#43137e;
+    font-size: 30px;
+ }
+ .menu{
+    flex: 70%;
+    /* border: 3px solid gray; */
+    text-align: right;
+    padding: 15px;
+ }
+ 
+ .menu a{
+    color:#43137e;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 16px;
+ }
+ .menu a:hover{
+    color:#276ad3;
+    border-top: 5px solid #276ad3;
+ }
+ #botao{
+    color:white;
+    background-color: #43137e;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin-right: 15%;
+    margin-left: 10px;
+    
+ }
+ #botao:hover{
+    border-top: none;
+    background: #9d46bc;
+    
+ }
+
+
+ .header{
+     display: flex;
+     flex-flow: row wrap;
+    height: auto;
+    /* background-color: gray; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+   
+ }
+
+
+ .headline{
+     flex:40%;
+     margin-left: 10%;
+     /* border: 1px solid black; */
+ }
+ .headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #43137e;
+ }
+ .img-headline{
+    flex:40%;
+    margin-right: 10%;
+    /* border: 1px solid rgb(167, 27, 27); */
+    text-align: center;
+ }
+ .botaoContrat{
+    background:#ff4d8e;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+ }
+ .botaoContrat:hover{
+    background-color: #eeb32e;
+ }
+
+ section{
+   margin-top: 80px;
+    /* border: 2px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+ }
+
+ section h2{
+   width: 100%;
+   font-size: 20px;
+   font-family: 'Lobster', cursive;
+   font-weight: bold;
+ }
+ .servicos{
+    margin-top: 5%;
+    display: inline-block;
+ }
+ .cards{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1px;
+    border: 1px solid #ff4d8e;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .text-Oculto{
+   display: none;
+ }
+ .cards:hover{
+   background-color: #ff4d8e;
+   color:white;
+   padding: 60px;
+ }
+ .cards:hover img{
+   display: none;
+ }
+ .cards:hover .text-card{
+    display: none;
+ }
+ .cards:hover .text-Oculto{
+   display: block;
+ }
+
+ footer{
+   margin-top: 100px;
+   height: 300px;
+   background-image:linear-gradient(180deg, #43137e,#ff4d8e,black) ;
+   text-align: center;
+   border: 1px solid #ff4d8e;
+ }
+ .rodape{
+   padding-top: 100px;
+   color: white;
+ }
+ .whats{
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+   
+ }
+.menu1{
+  /*  border: 2px solid red;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: violet;
+    width: 500px;
+    font-size: 27px;
+    border: 2px solid aquamarine;
+    padding: 10px;
+    display: flex;
+    
+    /*fazer desaparecer */
+    display: none;
+    
+    flex-wrap: nowrap; /*vem como padrão */
+    flex-wrap: wrap; /*assim que termina o tamanho da tela ele continuar em baixor*/
+    display: flex; /*fica um item proximo do outro*/
+    flex-direction: column; /* deixa os item em forma de blocos*/
+    flex-direction: column-reverse; /* deixa os item em forma de blocos de maneira em inversa*/
+    flex-direction: row; /* deixa os item em forma de linhas*/
+    flex-direction: row-reverse; /* deixa os item em forma de linhas e de maneira inversa*/
+    flex-flow: row wrap;    /* passando as duas propriedades juntas     flex-direction: row; e flex-wrap: wrap; */
+    justify-content: flex-start;  /*Para deixa o item do lado esquedo da tela na horizontal */
+    justify-content: flex-end;  /*Para deixa o item do lado direito da tela na horizontal */
+    justify-content: center;  /*Para deixa o item no centro da tela na horizontal */
+    justify-content: space-between;  /*Para deixa o item com espaço do outro */
+    justify-content: space-around;  /*Para deixa o item com espaço em redondeza */
+     align-items: stretch ; /* Já vem como  o tamanho padrão da tela */
+     align-items: center ; /* deixa a tela no centro na parte vertical */
+     align-items: flex-start ; /* deixa a tela na parte de cima na vertical */
+     align-items: flex-end ; /* deixa a tela na parte de baixo na vertical */
+     align-content: center; /* colocar todo conteudo no centro */
+     flex-grow: 1; /* aumenta o tamanho do performance*/
+    /* coloca para horizontal no lado esquedo centro e direito */
+    align-items: flex-end;
+    /*colocar para blocks e linhas*/
+    display: inline-block;
+    /* colocar para vertical ao lado esquedo centro e direito */
+    justify-content: flex-start;
+    /*colocar em linha revesa*/
+   
+    
+}
+
